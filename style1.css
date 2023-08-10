@@ -1,0 +1,108 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #EEF5FF;
+
+}
+.wrapper{
+    width: 370px;
+    height: 370px;
+    background: #FFFFFF;
+    text-align: center;
+    padding : 30px;
+    border-radius: 20px;
+}
+
+
+.picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.switch{
+    display: flex;
+    border-radius: 50px;
+    width: 3rem;
+    padding: .3rem;
+    background-color: #3A94F4;
+    transition: background-color .2s;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-150px);
+}
+
+
+
+.btn-toggle{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform .1s;
+}
+
+
+.dark-theme{
+    .wrapper{
+        background-color: black;
+        transition: .2s;
+    }
+
+    .wrapper span{
+        color: white;
+    }
+
+
+}
+
+.dark-theme .switch{
+    background-color: #434245;
+}
+
+.dark-theme .btn-toggle{
+    transform: translateX(17px);
+}
+
+
+.wrapper h2{
+    color: #3A94F4;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
+.wrapper span{
+    font-size: 15px;
+}
+
+.btn button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #3A94F4;
+    border:none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.btn,
+.wrapper span{
+    padding-top: 20px;
+}
+
+.btn button:hover{
+    background: #3A94F4;
+}
+
